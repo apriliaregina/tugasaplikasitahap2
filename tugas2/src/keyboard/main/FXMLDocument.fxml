@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="keyboard.main.FXMLDocumentController">
+    <children>
+        <Button fx:id="btnSave" layoutX="247.0" layoutY="379.0" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="150.0" text="Simpan">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Label fx:id="label" layoutX="390.0" layoutY="395.0" minHeight="16" minWidth="69" />
+      <Label layoutX="205.0" layoutY="47.0" text="INPUT DATA KEYBOARD">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="64.0" layoutY="149.0" prefHeight="20.0" prefWidth="144.0" text="IdPelanggan">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField id="Id" fx:id="Id" layoutX="224.0" layoutY="144.0" prefHeight="30.0" prefWidth="197.0" promptText="Input Id" />
+      <TextField id="tfNama" fx:id="tfNama" layoutX="224.0" layoutY="183.0" prefHeight="30.0" prefWidth="197.0" promptText="Input Nama" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="62.0" layoutY="188.0" prefHeight="20.0" prefWidth="144.0" text="Nama Pembeli">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="64.0" layoutY="226.0" prefHeight="20.0" prefWidth="144.0" text="Tanggal Beli">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpTanggalBeli" layoutX="224.0" layoutY="221.0" prefHeight="30.0" prefWidth="197.0" promptText="Pilih Tanggal" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="64.0" layoutY="266.0" prefHeight="20.0" prefWidth="144.0" text="Merk Keyboard">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdLogi" layoutX="224.0" layoutY="268.0" mnemonicParsing="false" text="Logitech">
+         <toggleGroup>
+            <ToggleGroup fx:id="merk" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdRobot" layoutX="319.0" layoutY="268.0" mnemonicParsing="false" text="Robot" toggleGroup="$merk" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="62.0" layoutY="307.0" prefHeight="20.0" prefWidth="144.0" text="Pembayaran">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbPembayaran" layoutX="224.0" layoutY="302.0" prefHeight="30.0" prefWidth="197.0" promptText="Pilih Pembayaran" />
+    </children>
+</AnchorPane>
